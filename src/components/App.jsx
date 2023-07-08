@@ -35,22 +35,6 @@ function App() {
     localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
 
-  // componentDidMount() {
-  //   const localStorageContacts = localStorage.getItem('contacts');
-  //   if (localStorageContacts !== null) {
-  //     this.setState({ contacts: JSON.parse(localStorageContacts) });
-  //     // console.log(JSON.parse(localStorageContacts));
-  //   }
-  // }
-
-  // componentDidUpdate(prevState) {
-  //   if (prevState.contacts !== this.state.contacts) {
-  //     const savedContacts = JSON.stringify(this.state.contacts);
-  //     localStorage.setItem('contacts', savedContacts);
-  //     // console.log(savedContacts);
-  //   }
-  // }
-
   return (
     <>
       <h1>Phonebook</h1>
